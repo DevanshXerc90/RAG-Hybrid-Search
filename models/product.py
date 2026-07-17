@@ -77,4 +77,8 @@ index_ada002 = Index(
     postgresql_ops={"embedding_ada002": "vector_ip_ops"},
 )
 
-Base.metadata.create_all(engine)
+try:
+    Base.metadata.create_all(engine)
+except Exception as e:
+    import logging
+    logging.getLogger(__name__).warning("Could not connect to database to create tables: %s", e)
