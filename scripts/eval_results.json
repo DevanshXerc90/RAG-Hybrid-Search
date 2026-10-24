@@ -1,0 +1,41 @@
+{
+  "products": 30,
+  "queries": 30,
+  "repeats": 5,
+  "embedding_p50_ms": 12.174081988632679,
+  "embedding_p95_ms": 16.149688977748156,
+  "results": [
+    {
+      "mode": "vector_only",
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "p50_ms": 7.4196049827151,
+      "p95_ms": 7.925836020149291,
+      "samples": 150
+    },
+    {
+      "mode": "keyword_only",
+      "recall_at_5": 0.7277777777777777,
+      "mrr": 0.7666666666666667,
+      "p50_ms": 2.8656150097958744,
+      "p95_ms": 2.9919809894636273,
+      "samples": 150
+    },
+    {
+      "mode": "hybrid_hnsw",
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "p50_ms": 8.540738956071436,
+      "p95_ms": 9.122458985075355,
+      "samples": 150
+    },
+    {
+      "mode": "hybrid_no_hnsw",
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "p50_ms": 8.55893304105848,
+      "p95_ms": 9.074781031813473,
+      "samples": 150
+    }
+  ]
+}

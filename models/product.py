@@ -74,7 +74,7 @@ index_ada002 = Index(
     Product.embedding,
     postgresql_using="hnsw",
     postgresql_with={"m": 16, "ef_construction": 64},
-    postgresql_ops={"embedding_ada002": "vector_ip_ops"},
+    postgresql_ops={"embedding": "vector_cosine_ops"},
 )
 
 try:
